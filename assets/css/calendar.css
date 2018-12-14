@@ -1,0 +1,448 @@
+div.abel_calendar {
+    margin-top: 15px;
+    padding: 0;
+}
+
+div.abel_calendar .table {
+    width: 100%;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+div.abel_calendar .table th,
+div.abel_calendar .table td {
+    padding: 1px 1px;
+    text-align: center;
+}
+
+div.abel_calendar .table tr th,
+div.abel_calendar .table tr td {
+    background-color: #ffffff;
+}
+
+div.abel_calendar .table tr.calendar-month-header th {
+    background-color: #fafafa;
+}
+
+div.abel_calendar .table tr.calendar-month-header th span {
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+div.abel_calendar .table tr.calendar-dow-header th {
+    background-color: #f0f0f0;
+}
+
+div.abel_calendar .table tr:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+div.abel_calendar .table tr.calendar-month-header th {
+    padding-top: 12px;
+    padding-bottom: 4px;
+    font-size: 20px;
+}
+
+div.abel_calendar .table-bordered tr.calendar-month-header th {
+    border-left: 0;
+    border-right: 0;
+}
+
+div.abel_calendar .table-bordered tr.calendar-month-header th:first-child {
+    border-left: 1px solid #dddddd;
+}
+
+div.abel_calendar div.calendar-month-navigation {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+div.abel_calendar div.calendar-month-navigation:hover {
+    background: #DBF1FA;
+}
+
+div.abel_calendar tr.calendar-dow-header th,
+div.abel_calendar tr.calendar-dow td {
+    width: 14%;
+}
+div.abel_calendar tr.calendar-dow td {
+    border: 2px solid transparent;
+    border-radius: 18%;
+    /*width: 50px;*/
+    /*height: 50px;*/
+    line-height: 34px;
+    text-align: center;
+}
+div.abel_calendar .table tr td div.day {
+    border: 2px solid transparent;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 50%;
+    /*height: 50px;*/
+    /*width: 50px;*/
+    text-align: center;
+    margin: 0 auto;
+    line-height: 14px;
+}
+
+/*div.abel_calendar .table tr td.event-1 div.day:hover {*/
+    /*border:2px solid #0E61DB;*/
+/*}*/
+
+/*div.abel_calendar .table tr td.event-1.event-2 div.day:hover {*/
+    /*border:2px solid #c0392b;*/
+/*}*/
+
+/* actions and events */
+
+
+div.abel_calendar .table tr td.dow-clickable,
+div.abel_calendar .table tr td.event-clickable {
+    cursor: pointer;
+}
+
+/* badge */
+div.abel_calendar .badge-today,
+div.abel_calendar div.legend span.badge-today {
+    background-color: #357ebd;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.abel_calendar .badge-event,
+div.abel_calendar div.legend span.badge-event {
+    background-color: #ff9b08;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.abel_calendar .badge-event {
+    font-size: 0.95em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
+/* legend */
+div.abel_calendar div.legend {
+    margin-top: 5px;
+    text-align: right;
+}
+
+div.abel_calendar div.legend span {
+    color: #999999;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+div.abel_calendar div.legend span.legend-text:after,
+div.abel_calendar div.legend span.legend-block:after,
+div.abel_calendar div.legend span.legend-list:after,
+div.abel_calendar div.legend span.legend-spacer:after {
+    content: ' ';
+}
+
+div.abel_calendar div.legend span.legend-spacer {
+    padding-left: 25px;
+}
+
+div.abel_calendar ul.legend > span {
+    padding-left: 2px;
+}
+
+div.abel_calendar ul.legend {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+div.abel_calendar ul.legend li {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    margin-left: 5px;
+}
+
+div.abel_calendar ul.legend
+div.abel_calendar ul.legend li:first-child {
+    margin-left: 7px;
+}
+
+div.abel_calendar ul.legend li:last-child {
+    margin-right: 5px;
+}
+
+div.abel_calendar div.legend span.badge {
+    font-size: 0.9em;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+/* responsive */
+@media (max-width: 979px) {
+    div.abel_calendar .table th,
+    div.abel_calendar .table td {
+        padding: 2px 1px;
+    }
+}
+
+/**/
+
+div.abel_calendar .table tr td.event-2.active div.day {
+    border: 2px solid #c0392b;
+}
+
+div.abel_calendar .table tr td.event-1.active div.day {
+    border: 2px solid #0E61DB;
+}
+div.abel_calendar .table tr td.event-2.event-1.active div.day {
+    border: 2px solid #c0392b;
+}
+
+
+div.abel_calendar .table tr td.current-date div.day {
+    background: #c0392b;
+    color: #f9f9f9;
+}
+
+.event-1,.event-2 {
+    cursor: pointer;
+    position: relative;
+}
+td.event-1:after {
+    background: #0E61DB;
+    border-radius: 50%;
+    bottom: 5px;
+    display: block;
+    content: '';
+    height: 8px;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    width: 8px;
+}
+
+td.event-2:after {
+    background: #c0392b;
+    border-radius: 50%;
+    bottom: 5px;
+    display: block;
+    content: '';
+    height: 8px;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    width: 8px;
+}
+
+td.event-1.event-2:before {
+    background: #c0392b;
+    border-radius: 50%;
+    bottom: 5px;
+    display: block;
+    content: '';
+    height: 8px;
+    left: 38%;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    width: 8px;
+}
+
+td.event-1.event-2:after {
+    background: #0E61DB;
+    border-radius: 50%;
+    bottom: 5px;
+    display: block;
+    content: '';
+    height: 8px;
+    left: 62%;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    width: 8px;
+}
+td.current-date.event-2:after {
+    background: #fff;
+}
+td.current-date.event-1.event-2:before {
+    background: #fff;
+}
+td.current-date.event-1.event-2:after {
+    background: #0E61DB;
+}
+
+h2.title.event-1:after {
+    background: #0E61DB;
+    border-radius: 50%;
+    top: -25px;
+    display: block;
+    content: '';
+    height: 12px;
+    left: 5px;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    width: 12px;
+}
+h2.title.event-2:after {
+    background: #c0392b;
+    border-radius: 50%;
+    top: -25px;
+    display: block;
+    content: '';
+    height: 12px;
+    left: 5px;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    width: 12px;
+}
+.person-list .day {
+    padding: 20px 10px 0px 10px;
+    background: #fff;
+    margin: 0px;
+    border: 5px #f7f8f9 solid;
+}
+.person-list .day p, .person-list .day span{
+    font-size: 14px !important;
+}
+.current-date.event:after {
+    background: #fff;
+}
+
+
+.list {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.close {
+    color: #A4AAAB;
+    margin-top: -10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.day-event {
+    background-color: #F2F2F2 ;
+    width: 100%;
+    padding: 20px 10px 0px 10px ;
+    margin-bottom: 50px;
+    display:none;
+}
+
+.day-event p, .day-event span{
+    font-size: 14px !important;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    max-width: none;
+}
+
+.day-event span{
+    font-size: 12px;
+}
+
+.day-event button {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #c0392b;
+    border: 0;
+    border-bottom: 2px solid #b53224;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #b53224;
+    box-shadow: inset 0 -2px #b53224;
+}
+.day-sample p,.day-sample a {
+    font-family: "Blokk", Arial, sans-serif;
+}
+
+.check-btn {
+    width: 100%;
+}
+.check-btn span , .print span{
+    background-color:#373740;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    font-weight:700;
+    color:#FFF;
+    font-size:1.2em;
+    letter-spacing:2px;
+    text-decoration:none;
+    font-family:'PT Sans', sans-serif;
+    text-align:center;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    cursor:pointer;
+    display:block;
+    margin: 10px auto 0px auto;
+    -webkit-transition:background-color 150ms ease-in;
+    -moz-transition:background-color 150ms ease-in;
+    -ms-transition:background-color 150ms ease-in;
+    -o-transition:background-color 150ms ease-in;
+    transition:background-color 150ms ease-in;
+}
+.check-btn span:hover, .print span:hover {
+    background-color:#c0392b;
+}
+input[type=checkbox] {display:none;}
+
+
+input[type=checkbox]:checked + span {
+    background-color:#9C2E23;
+    text-decoration:none;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    /*background:#9C2E23 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAX9JREFUeNpi+P//PwMNsS4QbwBiLnQ5WlqqAsRP/0PARiBmoYfFkkB8+z8qWALEjLS0mB+IL/3HDibSymJQXB7/jx/UgNSCvU4lwAbEG4DYkwi1WUxUspQZiOcRaSkIWOAKMk0Sg3jaf+IBOIVjMyQWiH8DsR+RljaTYOkBWJ5GNwRk2R+ooh9A7ETA0jwSLL0ATfEYqRpkyVc0xR+A2AyHpdFA/I9IS0F5WhRbAWIEtQQbeAXE6lhC5jeRlj4GYgVsRaYK1HBCmmWgmuyxhAwu8BpaXjNgs/gYkYbcAGIXPCGDDkCOM8eVPkCEFhE+JhX8BGJnfAkTxgC57BOVLAXlihBC2RA9Vf+k0FJQKk8nJv+jCwQi5WNyQAWxpR02wRQS8icy6CKlmMUlUUGipfOQK3lKLAbhdhIKfWZS6258kiAfzCZg6V4gZiOn0UBIAcgn63BYehK50Ke2xQxQH+3FUoqJUtJMIlYhLxAfxVJu09xiWENuMxCrUaNhCBBgAOAVfjALa5TLAAAAAElFTkSuQmCC) no-repeat 7% center;*/
+    background-size:15px 13px;
+}
+
+input[type=checkbox]:checked:hover + span {
+    background-color:#9C2E23;
+    color:rgba(255,255,255,0.5);
+    text-decoration:none;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    /*background:#9C2E23 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAS5JREFUeNq8110OgjAMAGBGvIY3VESjt9jPg95PT+LccBIZ7dYOWJPGB+g+Ymg3hLW2QeLkcu/y2pSFdvl0eQevehjI3uXbfkMh96TShFq/xhG6J4faAtxEtSBOQTm4QWpnOBWl4CZT69fuYpiCpnBDrB1xLhrjgoFO8F1oGcFslUv4bV32zFoxmOHJta0XMn65dC0UaiddA8UGiN4axeC1cUkdmWviEls/NwL1FqjPNtNvoimPdC3yRCUTiTXbt0R/oSnw2iiK10BBvBY6w2uiE3xJr8oFtcrvxy/fVcyeVdGx98yotcOxN/znHeMUIhdMOG8c4reagssF43VEoT5O4ZJwvNUUFJtcEE5BMXyGpnanf5yDxjiI+hSJj7YunEBvhbuTCh9tD+jiR4ABAJ0SrJgNr1UAAAAAAElFTkSuQmCC) no-repeat 7% center;*/
+    background-size:15px 15px;
+}
+
+.print-img, .list-img {
+    margin: 10px;
+    width: 50px;
+}
+
+.print-btn {
+    padding: 1px 14px 5px 14px;
+}
+
+
+.print-list {
+    margin-top: 15px;
+}
+
+div.abel_calendar .table tr.calendar-month-header th span :before {
+    color: #72c02c;
+}
+div.abel_calendar .event {
+    background-color: #72c02c !important;
+    color: #fff;
+    cursor: pointer;
+}

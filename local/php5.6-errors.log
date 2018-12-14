@@ -1,0 +1,3 @@
+[17-Dec-2015 00:50:47 UTC] PHP Fatal error:  Class 'Jenssegers\Date\DateServiceProvider' not found in C:\TWAMPd\htdocs\career\local\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php on line 146
+[17-Dec-2015 00:54:06 UTC] PHP Fatal error:  Class 'Jenssegers\Date\DateServiceProvider' not found in C:\TWAMPd\htdocs\career\local\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php on line 146
+[17-Dec-2015 00:54:55 UTC] PHP Fatal error:  Class 'Jenssegers\Date\DateServiceProvider' not found in C:\TWAMPd\htdocs\career\local\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php on line 146
