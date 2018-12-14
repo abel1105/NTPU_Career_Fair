@@ -53,7 +53,7 @@ class FairController extends Controller
         if(Cache::has('posts_'.$year)){
             $posts = Cache::get('posts_'.$year);
         }else {
-            $posts = Post::where('fair_id', $fair->id)->where('post_status', '1')->latest('updated_at')->get();
+            $posts = Post::where('fair_id', $fair->id)->where('post_status', '1')->orderBy('created_at')->get();
             Cache::forever('posts_'.$year, $posts);
         }
         //網站頁面設計 json
@@ -75,7 +75,7 @@ class FairController extends Controller
         if(Cache::has('lectures_'.$year)) {
             $lectures = Cache::get('lectures_'.$year);
         }else{
-            $lectures = Lecture::where('fair_id', $fair->id)->where('date', '>=', Carbon::today())->where('date', '<', Carbon::today()->addMonth(1))->orderBy('date', 'ASC')->paginate(6);
+            $lectures = Lecture::where('fair_id', $fair->id)->where('date', '>=', Carbon::today())->where('date', '<', Carbon::today()->addMonth(2))->orderBy('date', 'ASC')->paginate(6);
             Cache::put('lectures_'.$year, $lectures, 60);
         }
 

@@ -164,7 +164,7 @@ Date::setLocale('zh_TW');
                 autoProcessQueue: false,
                 uploadMultiple: true,
                 maxFiles: 20,
-                maxFilesize: 2,
+                maxFilesize: 5,
                 parallelUploads: 20,
 
                 // Dropzone settings

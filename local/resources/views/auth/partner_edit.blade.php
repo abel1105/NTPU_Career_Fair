@@ -114,7 +114,7 @@
                 autoProcessQueue: false,
                 uploadMultiple: false,
                 maxFiles: 1,
-                maxFilesize: 2,
+                maxFilesize: 5,
                 parallelUploads: 1,
                 acceptedFiles: 'image/*',
 
@@ -140,7 +140,7 @@
                 autoProcessQueue: false,
                 uploadMultiple: false,
                 maxFiles: 1,
-                maxFilesize: 2,
+                maxFilesize: 5,
                 parallelUploads: 1,
                 acceptedFiles: 'application/*',
 

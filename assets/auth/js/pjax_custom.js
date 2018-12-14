@@ -69,7 +69,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 1,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
             // Dropzone settings
@@ -90,7 +90,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 1,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
             // Dropzone settings
@@ -121,7 +121,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 10,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
             // Dropzone settings
@@ -232,7 +232,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 10,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
             // Dropzone settings
@@ -268,7 +268,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 10,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
             // Dropzone settings
@@ -314,7 +314,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 10,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
             // Dropzone settings
@@ -469,7 +469,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 1,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
 
@@ -508,7 +508,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 1,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
 
@@ -622,7 +622,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 1,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
 
@@ -644,7 +644,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 1,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'application/*',
 
@@ -682,7 +682,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 1,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'image/*',
 
@@ -705,7 +705,7 @@ $.extend($.fn.bindPJAX, {
             autoProcessQueue: false,
             uploadMultiple: false,
             maxFiles: 1,
-            maxFilesize: 2,
+            maxFilesize: 5,
             parallelUploads: 1,
             acceptedFiles: 'application/*',
 

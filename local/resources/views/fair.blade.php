@@ -172,7 +172,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                          data-captionhidden="off"
                          style="z-index: 6;">
                         <span class="page-scroll"><a href="#news" class="btn-u btn-brd btn-brd-hover btn-u-light">最新消息</a></span>
-                        <span class="page-scroll"><a href="#lectures" class="btn-u btn-brd btn-brd-hover btn-u-light">職涯講座</a></span>
+                        <span class="page-scroll"><a href="#lectures" class="btn-u btn-brd btn-brd-hover btn-u-light">職涯活動</a></span>
                     </div>
                     </li>
 

@@ -165,7 +165,7 @@
                 autoProcessQueue: false,
                 uploadMultiple: false,
                 maxFiles: 10,
-                maxFilesize: 2,
+                maxFilesize: 5,
                 parallelUploads: 1,
                 acceptedFiles: 'image/*',
                 // Dropzone settings

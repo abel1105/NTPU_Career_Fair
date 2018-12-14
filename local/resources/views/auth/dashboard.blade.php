@@ -401,7 +401,7 @@
                 autoProcessQueue: false,
                 uploadMultiple: false,
                 maxFiles: 1,
-                maxFilesize: 2,
+                maxFilesize: 5,
                 parallelUploads: 1,
                 acceptedFiles: 'image/*',
                 // Dropzone settings
@@ -413,7 +413,7 @@
                         myDropzone.processQueue();
                     });
                     this.on('success', function(file,data){
-                        var index = $('#doc_upload').data("index");
+                        var index = $('#img_upload').data("index");
                         $("div#img" + index).css('background-image', 'url("'+data['url']+'")');
                         $("input#img" + index + "_input").val(data['url']);
                         $('#img_upload').modal('hide');
@@ -425,7 +425,7 @@
                 autoProcessQueue: false,
                 uploadMultiple: false,
                 maxFiles: 1,
-                maxFilesize: 2,
+                maxFilesize: 5,
                 parallelUploads: 1,
                 acceptedFiles: 'application/*',
                 // Dropzone settings
