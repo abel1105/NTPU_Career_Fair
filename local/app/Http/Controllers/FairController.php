@@ -53,7 +53,7 @@ class FairController extends Controller
         if(Cache::has('posts_'.$year)){
             $posts = Cache::get('posts_'.$year);
         }else {
-            $posts = Post::where('fair_id', $fair->id)->where('post_status', '1')->orderBy('created_at')->get();
+            $posts = Post::where('fair_id', $fair->id)->where('post_status', '1')->latest('created_at')->get();
             Cache::forever('posts_'.$year, $posts);
         }
         //網站頁面設計 json
